@@ -9,3 +9,6 @@ Client sends frames to server and record latency and bandwidth.
 
 ### latency_bandwidth_sleep_mode (uncompleted)
 Client sends frames to server and record latency and bandwidth. Client enters sleep mode when bandwidth is below a threshold, and assumes sending when bandwidth is above the threshold.
+
+### latency_bandwidth_energy
+Client sends frames to server and record latency, bandwidth, and energy consumption.
