@@ -2,6 +2,7 @@ import os
 import socket
 import time
 import json
+from get_power import readAllValue
 
 HOST = 'localhost'
 PORT = 65432
@@ -25,7 +26,8 @@ def send_image(image_path, conn, log):
     log.append({
         'image': image_name,
         'start_time': start_time,
-        'end_time': end_time
+        'end_time': end_time,
+        'energy': readAllValue(),
     })
 
 def start_client(image_dir, host='localhost', port=65432):
